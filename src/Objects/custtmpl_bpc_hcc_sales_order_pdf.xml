@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_bpc_hcc_sales_order_pdf" standard="STDTMPLSALESORD">
+  <description></description>
+  <displaysourcecode>F</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>T</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>[BPC - HCC] - Sales Order PDF</title>
+  <trantype>SALESORD</trantype>
+</advancedpdftemplate>
