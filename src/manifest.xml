@@ -1,4 +1,183 @@
 <manifest projecttype="ACCOUNTCUSTOMIZATION">
   <projectname>henry_cheung_cameras</projectname>
   <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="true">CLASSES</feature>
+      <feature required="true">MULTISHIPTO</feature>
+      <feature required="true">LOCATIONS</feature>
+      <feature required="true">ADVBINSERIALLOTMGMT</feature>
+      <feature required="true">ADVANCEDPRINTING</feature>
+      <feature required="true">DEPARTMENTS</feature>
+      <feature required="true">CONSOLPAYMENTS</feature>
+      <feature required="true">WORKFLOW</feature>
+      <feature required="true">ITEMOPTIONS</feature>
+      <feature required="true">MULTPRICE</feature>
+      <feature required="true">CCTRACKING</feature>
+      <feature required="true">SUBSIDIARIES</feature>
+      <feature required="true">OPPORTUNITIES</feature>
+      <feature required="true">ADVBILLING</feature>
+      <feature required="true">UNITSOFMEASURE</feature>
+      <feature required="true">ADVSHIPPING</feature>
+      <feature required="true">INTERCOMPANYAUTOELIMINATION</feature>
+      <feature required="true">GROSSPROFIT</feature>
+      <feature required="true">BUSINESS</feature>
+      <feature required="true">SALESORDERS</feature>
+      <feature required="true">MULTICURRENCY</feature>
+    </features>
+    <objects>
+      <object>custcol_svb_bill_distr_exclude</object>
+      <object>custbody_sii_spcl_scheme_code_purchase</object>
+      <object>custbody_sii_property_location</object>
+      <object>customrole_atlas_core_cfo</object>
+      <object>customrole1109</object>
+      <object>customrole_atlas_core_controller</object>
+      <object>custbody_nondeductible_ref_tran</object>
+      <object>custbody_esc_campaign_category</object>
+      <object>customrole_atlas_demo_cntrl</object>
+      <object>custcol_5892_eutriangulation</object>
+      <object>customrole1101</object>
+      <object>custform_atlas_ff_purchase_order_form</object>
+      <object>customrole1107</object>
+      <object>customrole1106</object>
+      <object>custbody_date_of_taxable_supply</object>
+      <object>custform_atlas_ff_cash_sale_form</object>
+      <object>customrole1105</object>
+      <object>custbody_fam_lp_contractnum</object>
+      <object>custcol_nondeductible_account</object>
+      <object>custbody_nexus_notc</object>
+      <object>custbody_fam_lp_totalleaseliab</object>
+      <object>custbody_fam_lp_asset</object>
+      <object>custbody_fam_lp_journal</object>
+      <object>customrole_atlas_core_sales_rep</object>
+      <object>custtmpl_sw_atlas_so</object>
+      <object>custcol_svb_dist_alloc_det_hidden</object>
+      <object>custbody_sii_land_register</object>
+      <object>custbody_fam_lp_company</object>
+      <object>custbody_fam_lp_rentalfreq</object>
+      <object>custtab_31_5435884_159</object>
+      <object>customrole1115</object>
+      <object>custbody_sii_exempt_details</object>
+      <object>custcol_statistical_procedure_sale</object>
+      <object>customrole1113</object>
+      <object>custcol_emirate</object>
+      <object>customrole1112</object>
+      <object>custtab_8_3838944_670</object>
+      <object>customrole1117</object>
+      <object>custbody_cash_register</object>
+      <object>custbody_sii_orig_invoice</object>
+      <object>customrole1116</object>
+      <object>customrole1074</object>
+      <object>customrole_ns_taf_cfo</object>
+      <object>custtab_9_4533432_230</object>
+      <object>customrole1111</object>
+      <object>custbody_fam_lp_annualrate</object>
+      <object>custform_atlas_ff_return_authorization_form</object>
+      <object>customrole1110</object>
+      <object>custbody_stc_tax_after_discount</object>
+      <object>custbody_svb_sched_in_process</object>
+      <object>customrole_esc_sales_manager</object>
+      <object>custbody_fam_lp_totalprincipal</object>
+      <object>custbody_sii_spcl_scheme_code_sales</object>
+      <object>customrole_atlas_sw_controller</object>
+      <object>custcol_svb_item_exp_account</object>
+      <object>custbody_sii_intra_txn_type</object>
+      <object>customrole1004</object>
+      <object>customrole1002</object>
+      <object>custbody_stc_total_after_discount</object>
+      <object>custbody_svb_schedule_is_intercompany</object>
+      <object>custbody_adjustment_journal</object>
+      <object>custform_atlas_ff_invoice_form</object>
+      <object>custform_atlas_ff_item_fulfillment_form</object>
+      <object>customrole_atlas_core_scm</object>
+      <object>custbody_my_import_declaration_num</object>
+      <object>customrole1001</object>
+      <object>custcol_9997_dd_file_format</object>
+      <object>customrole1000</object>
+      <object>custbody_fam_lp_leaseliability</object>
+      <object>custcol_counterparty_vat</object>
+      <object>custbody_sii_registration_code</object>
+      <object>customrole_atlas_core_acct_alyst</object>
+      <object>custbody_fam_lp_enddate</object>
+      <object>custbody_fam_lp_assetprop</object>
+      <object>custbody_establishment_code</object>
+      <object>custbody_sii_not_reported_in_time</object>
+      <object>customrole_esc_sales_rep</object>
+      <object>customrole_atlas_core_ceo</object>
+      <object>custcol_far_trn_relatedasset</object>
+      <object>customrole_esc_sales_publisher</object>
+      <object>customrole_ns_taf_accountant</object>
+      <object>custbody_svb_vb_to_bell_dist_sched</object>
+      <object>custbody_document_date</object>
+      <object>custcol_sii_exempt_line_details</object>
+      <object>customrole_atlas_core_sales_manager</object>
+      <object>custbody_fam_lp_totalnpv</object>
+      <object>custbody_9997_pfa_record</object>
+      <object>custbody_esc_last_modified_date</object>
+      <object>custbody_regime_code_of_supply</object>
+      <object>custbody_sii_is_third_party</object>
+      <object>custbody_sii_invoice_date</object>
+      <object>custbody_svb_error_logs</object>
+      <object>custbody_stc_amount_after_discount</object>
+      <object>custbody_sii_registration_msg</object>
+      <object>custcol_establishment_code</object>
+      <object>custbody_sii_accounting_date</object>
+      <object>customrole_esc_sales_admin</object>
+      <object>custbody_fam_lp_term</object>
+      <object>custcol_statistical_value</object>
+      <object>customroleatlas_sw_accountant</object>
+      <object>custbody_fam_lp_assetdesc</object>
+      <object>custcol_sii_annual_prorate</object>
+      <object>custbody_fam_lp_startdate</object>
+      <object>custbody_fam_jrn_reversal_date</object>
+      <object>custbody_fam_lp_totalinterest</object>
+      <object>customrole_atlas_core_ar_analyst</object>
+      <object>custbody_4110_customregnum</object>
+      <object>custbody_sii_ref_no</object>
+      <object>custbody_9997_is_for_ep_dd</object>
+      <object>custcol_svb_vend_bill_lineno</object>
+      <object>custbody_sii_article_72_73</object>
+      <object>custcol_sii_service_date</object>
+      <object>customrole_atlas_sw_ceo</object>
+      <object>custbody_fam_lp_intexpense</object>
+      <object>custbody_4599_sg_import_permit_num</object>
+      <object>custbody_delivery_terms</object>
+      <object>custtab_17_t1221897_664</object>
+      <object>custcol_2663_eft_file_format</object>
+      <object>custbody_doc_num_summ_invoice</object>
+      <object>custtab_16_t1221897_664</object>
+      <object>custbody_fam_lp_totalleasepayment</object>
+      <object>custbody_sii_external_reference</object>
+      <object>custbody_itr_doc_number</object>
+      <object>custbody_2663_reference_num</object>
+      <object>custcol_statistical_procedure_purc</object>
+      <object>custbody_transaction_region</object>
+      <object>custbody_fam_jrn_reversal_no</object>
+      <object>custbody_nondeductible_ref_genjrnl</object>
+      <object>custbody_mode_of_transport</object>
+      <object>custbody_esc_created_date</object>
+      <object>custtab_16_3776644_208</object>
+      <object>custbody_sii_article_61d</object>
+      <object>custbody_svb_allocation_journal</object>
+      <object>custbody_sii_orig_bill</object>
+      <object>custbody_nondeductible_processed</object>
+      <object>custbody_sii_received_inv_type</object>
+      <object>custbody_svb_vend_bill_link</object>
+      <object>custbody_counterparty_vat</object>
+      <object>custbody_refno_originvoice</object>
+      <object>custbody_fam_lp_financelease</object>
+      <object>custbody_bpc_department</object>
+      <object>custtab_2_3838944_108</object>
+      <object>custcol_expense_code_of_supply</object>
+      <object>custbody_9997_is_for_ep_eft</object>
+      <object>custbody_sii_issued_inv_type</object>
+      <object>custbody_sii_registration_status</object>
+      <object>customrole_atlas_core_accnt_mngr</object>
+      <object>custbody_sii_correction_type</object>
+      <object>customrole_atlas_core_inv_manager</object>
+      <object>custbody_sii_operation_date</object>
+      <object>custbody_notc</object>
+      <object>custbody_fam_lp_rightofuse</object>
+    </objects>
+  </dependencies>
 </manifest>

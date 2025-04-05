@@ -718,7 +718,7 @@
             <column>
               <id>UNITS</id>
               <label>Units</label>
-              <visible>F</visible>
+              <visible>T</visible>
             </column>
             <column>
               <id>AMOUNT</id>
