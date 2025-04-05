@@ -125,13 +125,13 @@
         <tr>
             <th>Source</th>
             <th>${record.otherrefnum@label}</th>
-            <th>${record.shipcarrier@label}</th>
+            <th>Ship Carrier</th>
             <th>${record.shipdate@label}</th>
         </tr>
         <tr>
             <td style="padding-top: 2px;">${record.entity.leadsource}</td>
             <td style="padding-top: 2px;">${record.otherrefnum}</td>
-            <td style="padding-top: 2px;">${record.shipcarrier}</td>
+            <td style="padding-top: 2px;">${record.custbody_bpc_shipping_carrier_copy}</td>
             <td style="padding-top: 2px;background-color:rgb(255, 190, 190)">${record.shipdate}</td>
         </tr>
     </table>
