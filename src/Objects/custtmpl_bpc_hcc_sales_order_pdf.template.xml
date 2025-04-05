@@ -67,9 +67,6 @@
         <macro id="nlfooter">
             <table style="width: 100%; font-size: 8pt;">
                 <tr>
-                    <td style="padding: 0;">
-                        <barcode codetype="code128" showtext="true" value="${record.tranid}"/>
-                    </td>
                     <td align="right" style="padding: 0;">
                         <pagenumber/> of <totalpages/>
                     </td>
@@ -112,7 +109,7 @@
     </style>
 </head>
 <body header="nlheader" header-height="15%" footer="nlfooter" footer-height="20pt" padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
-    <table style="width: 100%; padding: 10px; margin-top: 10px;">
+    <table style="width: 100%; padding-top:20px; margin-top: 10px; border: 1px solid #333333;">
         <tr>
             <td style="font-size: 8pt; padding: 6px 0 2px; font-weight: bold; color: #333333;" colspan="3">${record.billaddress@label}</td>
             <td style="font-size: 8pt; padding: 6px 0 2px; font-weight: bold; color: #333333;" colspan="3">${record.shipaddress@label}</td>
@@ -132,7 +129,7 @@
             <th>${record.shipdate@label}</th>
         </tr>
         <tr>
-            <td style="padding-top: 2px;">${record.customer.lead.source}</td>
+            <td style="padding-top: 2px;">${record.entity.leadsource}</td>
             <td style="padding-top: 2px;">${record.otherrefnum}</td>
             <td style="padding-top: 2px;">${record.shipmethod}</td>
             <td style="padding-top: 2px;background-color:rgb(255, 190, 190)">${record.shipdate}</td>
