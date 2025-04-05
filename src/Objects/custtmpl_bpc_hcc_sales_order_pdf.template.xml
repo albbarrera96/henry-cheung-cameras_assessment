@@ -16,7 +16,7 @@
 	</#if>
     <macrolist>
         <macro id="nlheader">
-            <table style="width: 100%; font-size: 10pt; border: 1px solidrgb(1, 1, 1);">
+            <table style="width: 100%; font-size: 10pt;">
                 <tr>
                     <td rowspan="4" style="padding: 0;">
                     <#if companyInformation.logoUrl?length != 0>
@@ -25,37 +25,47 @@
                         ${companyInformation.companyName}<br />
                         ${companyInformation.addressText}
                     </td>
-                    <td>
-                        <table style="width:100%; font-size: 8pt;">
+                    <td align="right">
+                        <table style="width:90%; font-size: 8pt;">
                             <tr style="font-weight: bold; background-color: #c3abcf width:100%;">
                                 <td>Company Information:</td>
                                 <td style="font-weight: bold;">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">Company Name:</td>
+                                <td style="font-weight: bold;">Name:</td>
                                 <td>${companyInformation.companyName}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold;">Email:</td>
+                                <td>${companyInformation.email}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold;">Phone:</td>
+                                <td>${companyInformation.phone}</td>
                             </tr>
                             <tr style="font-weight: bold;background-color: #c3abcf;">
                                 <td>Sales Order Information:</td>
                                 <td style="font-weight: bold;">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">Sales Order:</td>
+                                <td style="font-weight: bold;">SO Number:</td>
                                 <td>#${record.tranid}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold;">Date:</td>
+                                <td>${record.trandate}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold;">Terms:</td>
+                                <td>${record.terms}</td>
                             </tr>
                         </table>
                     </td>
                 </tr>
-                <tr>
-                    <td align="right" style="padding: 0;"><span style="font-size: 16pt;">#${record.tranid}</span></td>
-                </tr>
-                <tr>
-                    <td align="right" style="padding: 0;">${record.trandate}</td>
-                </tr>
             </table>
         </macro>
         <macro id="nlfooter">
-            <table style="width: 100%; font-size: 8pt; border: 1px solidrgb(1, 1, 1);">
+            <table style="width: 100%; font-size: 8pt;">
                 <tr>
                     <td style="padding: 0;">
                         <barcode codetype="code128" showtext="true" value="${record.tranid}"/>
@@ -102,7 +112,7 @@
     </style>
 </head>
 <body header="nlheader" header-height="15%" footer="nlfooter" footer-height="20pt" padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
-    <table style="width: 100%; margin-top: 10px; border: 1px solidrgb(1, 1, 1);padding: 10px;">
+    <table style="width: 100%; padding: 10px;">
         <tr>
             <td style="font-size: 8pt; padding: 6px 0 2px; font-weight: bold; color: #333333;" colspan="3">${record.billaddress@label}</td>
             <td style="font-size: 8pt; padding: 6px 0 2px; font-weight: bold; color: #333333;" colspan="3">${record.shipaddress@label}</td>
