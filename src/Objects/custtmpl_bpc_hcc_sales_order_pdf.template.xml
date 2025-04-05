@@ -168,6 +168,9 @@
     </#if>
     <table style="page-break-inside: avoid; width: 100%; margin-top: 10px;">
         <tr>
+            <td colsppan="6" align="left" style="font-size: 10pt">Thank you for your business</td>
+        </tr>
+        <tr>
             <td colspan="4"></td>
             <td align="right" style="font-weight: bold; color: #333333;">${record.subtotal@label}</td>
             <td align="right">${record.subtotal}</td>
