@@ -20,7 +20,7 @@
                 <tr>
                     <td rowspan="4" style="padding: 0;">
                     <#if companyInformation.logoUrl?length != 0>
-                        <@filecabinet nstype="image" width="70px" height="70" align="left" src="${companyInformation.logoUrl}" />
+                        <@filecabinet nstype="image" width="90px" height="60" align="left" src="${companyInformation.logoUrl}" />
                     </#if>
                         ${companyInformation.companyName}<br />
                         ${companyInformation.addressText}
@@ -126,13 +126,13 @@
     </table>
     <table style="width: 100%; margin-top: 10px;">
         <tr>
-            <th>${record.paymentmethod@label}</th>
+            <th>Source</th>
             <th>${record.otherrefnum@label}</th>
             <th>${record.shipmethod@label}</th>
             <th>${record.shipdate@label}</th>
         </tr>
         <tr>
-            <td style="padding-top: 2px;">${record.paymentmethod}</td>
+            <td style="padding-top: 2px;">${record.customer.lead.source}</td>
             <td style="padding-top: 2px;">${record.otherrefnum}</td>
             <td style="padding-top: 2px;">${record.shipmethod}</td>
             <td style="padding-top: 2px;background-color:rgb(255, 190, 190)">${record.shipdate}</td>
