@@ -201,5 +201,23 @@
             </tr>
         </table>
     </#if>
+    <#if record.item?has_content>
+        <table style="width: 40%; margin-top: 10px; border: 1px solid #d3d3d3;">
+            <tr style="background-color: #c3abcf;">
+                <th style="font-size: 10pt; font-weight: bold; color: #333333;">Summary</th>
+                <th style="font-size: 10pt; font-weight: bold; color: #333333;">Total Quantity</th>
+            </tr>
+            <tr>
+                <td style="font-size: 9pt; color: #333333;">Overall Quantity</td>
+                <td style="font-size: 9pt; color: #333333; text-align: right;">
+                    <#assign totalQuantity = 0 />
+                    <#list record.item as item>
+                        <#assign totalQuantity += item.quantity?number />
+                    </#list>
+                    ${totalQuantity}
+                </td>
+            </tr>
+        </table>
+    </#if>
 </body>
 </pdf>

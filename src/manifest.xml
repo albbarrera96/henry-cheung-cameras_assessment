@@ -24,6 +24,7 @@
       <feature required="true">BUSINESS</feature>
       <feature required="true">SALESORDERS</feature>
       <feature required="true">MULTICURRENCY</feature>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
     </features>
     <objects>
       <object>custcol_svb_bill_distr_exclude</object>
@@ -101,6 +102,7 @@
       <object>custbody_fam_lp_enddate</object>
       <object>custbody_fam_lp_assetprop</object>
       <object>custbody_establishment_code</object>
+      <object>customlist_operation_type</object>
       <object>custbody_sii_not_reported_in_time</object>
       <object>customrole_esc_sales_rep</object>
       <object>customrole_atlas_core_ceo</object>
@@ -134,6 +136,7 @@
       <object>customrole_atlas_core_ar_analyst</object>
       <object>custbody_4110_customregnum</object>
       <object>custbody_sii_ref_no</object>
+      <object>custbody_4599_mx_operation_type</object>
       <object>custbody_9997_is_for_ep_dd</object>
       <object>custcol_svb_vend_bill_lineno</object>
       <object>custbody_sii_article_72_73</object>
