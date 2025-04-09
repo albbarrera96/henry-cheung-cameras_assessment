@@ -33,15 +33,27 @@
                             </tr>
                             <tr>
                                 <td style="font-weight: bold;">Name:</td>
-                                <td>${companyInformation.companyName}</td>
+                                <td>${record.entity.companyname}</td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold;">Email:</td>
-                                <td>${companyInformation.email}</td>
+                                <td>
+                                    <#if record.entity.email?has_content>
+                                        ${record.entity.email}
+                                    <#else>
+                                        No email provided
+                                    </#if>
+                                </td>
                             </tr>
                             <tr>
                                 <td style="font-weight: bold;">Phone:</td>
-                                <td>${companyInformation.phone}</td>
+                                <td>
+                                    <#if record.entity.phone?has_content>
+                                        ${record.entity.phone}
+                                    <#else>
+                                        No phone provided
+                                    </#if>
+                                </td>
                             </tr>
                             <tr style="font-weight: bold;background-color: #c3abcf;">
                                 <td>Sales Order Information:</td>
@@ -129,7 +141,7 @@
             <th>${record.shipdate@label}</th>
         </tr>
         <tr>
-            <td style="padding-top: 2px;">${record.entity.leadsource}</td>
+            <td style="padding-top: 2px; <#if record.entity.leadsource == "Web">color: red;</#if>">${record.entity.leadsource}</td>
             <td style="padding-top: 2px;">${record.otherrefnum}</td>
             <td style="padding-top: 2px;">${record.custbody_bpc_shipping_carrier_copy}</td>
             <td style="padding-top: 2px;background-color:rgb(255, 190, 190)">${record.shipdate}</td>
