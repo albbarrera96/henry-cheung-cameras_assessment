@@ -184,7 +184,7 @@
     </#if>
     <table style="page-break-inside: avoid; width: 100%; margin-top: 10px;">
         <tr>
-            <td colsppan="8" align="left" style="font-size: 10pt">Thank you for your business</td>
+            <td colsppan="8" align="left" style="font-size: 10pt">${record.message}</td>
         </tr>
 
         <tr>
